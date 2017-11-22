@@ -1,0 +1,12 @@
+.contents-body{
+    min-height: 400px;
+}
+
+th{
+    font-weight: bold;
+}
+
+tr.selected{
+    background-color: blue;
+    color: #ffffff;
+}

@@ -4,11 +4,11 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ContentsComponent } from './contents/contents.component';
-import { ExpsComponent } from './exps/exps.component';
-import { AssignmentOneComponent } from './assignment-one/assignment-one.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContentsComponent } from './components/contents/contents.component';
+import { ExpsComponent } from './components/exps/exps.component';
+import { AssignmentOneComponent } from './components/assignment-one/assignment-one.component';
 
 
 @NgModule({

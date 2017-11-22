@@ -5,7 +5,7 @@
     <div>
       {{name}}
     </div>
-    <button [title]="buttonTitle" (click)="abc()">Swap Me</button>
+    <button [title]="buttonTitle" (click)="swapMe()">Swap Me</button>
   </div>
   <div>
     <p>Text Box Value Changes</p>
@@ -21,23 +21,20 @@
     <label>Age</label>
     <input type="text" [(ngModel)]="newEmployee.age">
     <button (click)="addEmployee()">Add</button>
-    
+
     <table>
       <tr>
-        <td>Name</td>
-        <td>Age</td>
-        <td></td>
+        <th>Name</th>
+        <th>Age</th>
+        <th></th>
+        <th></th>
       </tr>
 
       <tr *ngFor="let emp of employees" [ngClass]="{ 'selected' : emp.selected }">
-        <td>
-          {{emp.name}}
-        </td>
-        <td>
-          {{emp.age}}
-        </td>
-        <td>
-          <button (click)="showDetails(emp)">More Details</button>
+        <td> {{emp.name}}</td>
+        <td>{{emp.age}}</td>
+        <td><button (click)="showDetails(emp)">More Details</button></td>
+        <td><button (click)="deleteEmp(emp)">Delete</button></td>
       </tr>
     </table>
     <div *ngIf="selectedEmployee">
