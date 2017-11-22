@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentsComponent } from './contents/contents.component';
 import { ExpsComponent } from './exps/exps.component';
+import { AssignmentOneComponent } from './assignment-one/assignment-one.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ExpsComponent } from './exps/exps.component';
     HeaderComponent,
     FooterComponent,
     ContentsComponent,
-    ExpsComponent
+    ExpsComponent,
+    AssignmentOneComponent
   ],
   imports: [
     BrowserModule,
