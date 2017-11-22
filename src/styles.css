@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+div{
+    margin: 10px 0 10px 5px;
+}
+
+P{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+table{
+    margin: 10px 0;
+    border: 1px solid #676464;
+}
+
+th, td{
+    border: 1px solid #676464;
+    min-width: 100px;
+    text-align: center;
+}
