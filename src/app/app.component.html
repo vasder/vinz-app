@@ -1,6 +1,7 @@
 <app-header></app-header>
 
-<app-menu></app-menu>
+<app-menu [list]="menuList" (onMenuClick)="onMenuClick($event)" [buttonList]="buttons" (onButtonItemClick)="selectView($event)">
+</app-menu>
 
 <app-contents></app-contents>
 
