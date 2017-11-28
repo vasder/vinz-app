@@ -1,0 +1,21 @@
+<p>
+  Student Details
+</p>
+<p>
+  Student Details
+</p>
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Mark</th>
+      <th></th>
+    </tr>
+
+    <tr *ngFor="let stud of students ">
+      <td>{{stud.stname}}</td>
+      <td>{{stud.mark}}</td>
+      <td><button>View Details</button>/td>
+    </tr>
+  </table>
+</div>

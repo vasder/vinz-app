@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContentsComponent } from './components/contents/contents.component';
 import { ExpsComponent } from './components/exps/exps.component';
 import { AssignmentOneComponent } from './components/assignment-one/assignment-one.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { StudentsComponent } from './components/students/students.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { AssignmentOneComponent } from './components/assignment-one/assignment-o
     FooterComponent,
     ContentsComponent,
     ExpsComponent,
-    AssignmentOneComponent
+    AssignmentOneComponent,
+    MenuComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
