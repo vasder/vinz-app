@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { EmployeeService } from '../../employee.service';
 
 @Component({
   selector: 'app-menu',
