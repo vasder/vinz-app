@@ -5,12 +5,12 @@
     <div>
       {{name}}
     </div>
-    <button [title]="buttonTitle" (click)="swapMe()">Swap Me</button>
+    <button [title]="buttonTitle" (click)="swapMe()" type="button" class="btn btn-info">Swap Me</button>
   </div>
   <div>
     <p>Text Box Value Changes</p>
     <input type="text" [(ngModel)]="myInputVal"> {{myInputVal}}
-    <button (click)="onButtonClick()">Change Text Box Value</button>
+    <button (click)="onButtonClick()" type="button" class="btn btn-warning">Change Text Box Value</button>
   </div>
 
   <div>
@@ -20,28 +20,29 @@
     <input type="text" [(ngModel)]="newEmployee.name">
     <label>Age</label>
     <input type="text" [(ngModel)]="newEmployee.age">
-    <button (click)="addEmployee()">Add</button>
-
-    <table>
+    <button (click)="addEmployee()" type="button" class="btn btn-primary">Add</button>
+  </div>
+  <div>
+    <table class="table table-striped">
       <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th></th>
-        <th></th>
+        <th scope="row"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
       </tr>
 
       <tr *ngFor="let emp of employees" [ngClass]="{ 'selected' : emp.selected }">
+        <th scope="row">{{index}}</th>
         <td> {{emp.name}}</td>
         <td>{{emp.age}}</td>
-        <td><button (click)="showDetails(emp)">More Details</button></td>
-        <td><button (click)="deleteEmp(emp)">Delete</button></td>
+        <td><button (click)="showDetails(emp)" type="button" class="btn btn-success">More Details</button></td>
+        <td><button (click)="deleteEmp(emp)" type="button" class="btn btn-danger">Delete</button></td>
       </tr>
     </table>
-    <div *ngIf="selectedEmployee">
-      <p>{{selectedEmployee.name}}</p>
-      <p>{{selectedEmployee.age}}</p>
-    </div>
   </div>
-
-
+  <div *ngIf="selectedEmployee">
+    <p>{{selectedEmployee.name}}</p>
+    <p>{{selectedEmployee.age}}</p>
+  </div>
 </div>

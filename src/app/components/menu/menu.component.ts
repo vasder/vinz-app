@@ -31,8 +31,8 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.empService.employeeListEvent
-      .subscribe(employee => {
-        this.employeeCount = employee.length;
+      .subscribe(employees => {
+        this.employeeCount = employees.length;
       });
   }
 

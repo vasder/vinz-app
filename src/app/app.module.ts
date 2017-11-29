@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ExpsComponent } from './components/exps/exps.component';
 import { AssignmentOneComponent } from './components/assignment-one/assignment-one.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { StudentsComponent } from './components/students/students.component';
+import { EmployeeService } from './employee.service';
 
 
 @NgModule({
@@ -26,9 +28,12 @@ import { StudentsComponent } from './components/students/students.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    EmployeeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

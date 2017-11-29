@@ -15,7 +15,7 @@ export class EmployeeService {
 
     getEmployees() {
         return this.http
-            .get('/assets/employee.json')
+            .get('/assets/employees.json')
             .map((employees: Array<Employee>) => {
                 employees.push({
                     name: 'Raja',

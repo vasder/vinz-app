@@ -1,25 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-div {
-    margin: 10px 0 10px 5px;
+body{
+    padding:10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div {
+    margin: 10px 0 10px 0px;
+    max-width: 650px;
 }
 
 P {
     font-weight: bold;
     text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-table {
-    margin: 10px 0;
-    border: 1px solid #676464;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 th, td {
-    border: 1px solid #676464;
-    min-width: 100px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
